@@ -36,7 +36,7 @@ function removeFruit(e) {
 }
 
 function fetchFruitData(fruit){
-    fetch(`https://fruity-api.onrender.com/api/fruits/${fruit}`)
+    fetch(`https://fruit-api-5v0j.onrender.com/fruits/${fruit}`)
         .then(resp => processResponse(resp))
         .then(data => addFruit(data))
         .catch((e) => console.log(e))
